@@ -166,7 +166,8 @@ img {
   padding: 15px;
   text-align: center;
   text-decoration: none;
-  color: var(--black);
+  color: var(--white);
+  background-color: var(--black);
   font-size: 24px;
   border: 2px solid transparent;
   border-radius: 5px;
@@ -183,9 +184,18 @@ img {
 
 .button--transparent {
   text-transform: capitalize;
+  color: var(--black);
+  background-color: transparent;
   background-color: transparent;
   border-color: var(--black);
   min-width: 220px;
+}
+
+.button--big {
+  min-width: 438px;
+  padding: 32px;
+  font-size: 36px;
+  border-radius: 15px;
 }
 
 
@@ -248,4 +258,59 @@ img {
 
 .sitenav__link:active {
   opacity: 0.6;
+}
+
+
+/* HERO  */
+.hero {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.hero__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 530px;
+  margin-right: 50px;
+}
+
+.hero__img-light {
+  position: absolute;
+  top: 16%;
+  right: 0;
+  display: block;
+  width: 85px;
+  height: 85px;
+  object-fit: contain;
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 125%;
+  color: var(--dark-black);
+}
+
+.hero__text {
+  margin-top: 0;
+  margin-bottom: 60px;
+  font-size: 24px;
+  color: var(--gray);
+}
+
+.hero__img {
+  display: inline-block;
+  width: 661px;
+  height: 661px;
+  object-fit: contain;
 }
