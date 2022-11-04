@@ -263,13 +263,13 @@ img {
 
 /* HERO  */
 .hero {
-  padding-top: 60px;
   padding-bottom: 60px;
 }
 
 .hero__container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .hero__content {
@@ -279,7 +279,7 @@ img {
   align-items: flex-start;
   width: 100%;
   max-width: 530px;
-  margin-right: 50px;
+  padding-right: 30px;
 }
 
 .hero__img-light {
@@ -309,8 +309,8 @@ img {
 }
 
 .hero__img {
-  display: inline-block;
-  width: 661px;
+  display: block;
+  width: 49%;
   height: 661px;
   object-fit: contain;
 }
