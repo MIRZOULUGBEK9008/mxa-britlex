@@ -377,6 +377,7 @@ img {
 
 .skills__item:last-child .item__content {
   max-width: 332px;
+  margin-right: 9%;
 }
 
 .item {
