@@ -482,7 +482,7 @@ h3 {
   flex-direction: column;
   align-items: center;
   margin-left: 105px;
-  margin-bottom: 7  0px;
+  margin-bottom: 70px;
 }
 
 .description-list__detail {
@@ -694,4 +694,51 @@ h3 {
 
 .privacy__link:hover {
   color: #333;
+}
+
+/* 1200px  */
+@media only screen and (max-width: 1200px) {
+  .button--big {
+    font-size: 24px;
+    padding: 22px;
+    min-width: 292px;
+  }
+
+  .hero__content {
+    max-width: 430px;
+  }
+
+  .hero__title {
+    font-size: 48px;
+    margin-bottom: 27px;
+  }
+
+  .hero__text {
+    font-size: 20px;
+    margin-bottom: 33px;
+  }
+
+  .hero__img-light {
+    width: 58px;
+    height: 58px;
+  }
+}
+
+
+/* 1000px */
+@media only screen and (max-width: 1000px) {
+  .logo__img {
+    width: 89px;
+    height: 45px;
+  }
+
+  .button--transparent {
+    font-size: 18px;
+    padding: 12px;
+    min-width: 160px;
+  }
+
+  .site-header__sitenav .sitenav__link {
+    font-size: 16px;
+  }
 }
