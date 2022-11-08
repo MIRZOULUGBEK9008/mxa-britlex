@@ -387,6 +387,10 @@ h3 {
   grid-column-end: 4;
 }
 
+.skills__item:last-child > .item__img {
+  width: 50%;
+}
+
 .skills__item:first-child {
   grid-row-start: 1;
   grid-row-end: 3;
@@ -496,7 +500,7 @@ h3 {
 
 .about__img {
   display: block;
-  width: 500px;
+  width: 38%;
   height: 500px;
   object-fit: contain;
 }
@@ -696,12 +700,48 @@ h3 {
   color: #333;
 }
 
-/* 1200px  */
-@media only screen and (max-width: 1200px) {
+
+/* MEDIA-QUERIES  */
+/* 1000px */
+@media only screen and (max-width: 1000px) {
+  .site-header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .logo__img {
+    width: 89px;
+    height: 45px;
+  }
+
+  .button--transparent {
+    font-size: 18px;
+    padding: 12px;
+    min-width: 160px;
+  }
+
+  .site-header__sitenav .sitenav__link {
+    font-size: 16px;
+  }
+
+  .button--black {
+    font-size: 18px;
+    padding: 17px;
+    min-width: 196px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
   .button--big {
     font-size: 24px;
     padding: 22px;
     min-width: 292px;
+  }
+
+  .hero {
+    padding-bottom: 24px;
   }
 
   .hero__content {
@@ -722,23 +762,62 @@ h3 {
     width: 58px;
     height: 58px;
   }
-}
 
-
-/* 1000px */
-@media only screen and (max-width: 1000px) {
-  .logo__img {
-    width: 89px;
-    height: 45px;
+  .skills {
+    padding-top: 24px;
+    padding-bottom: 53px;
   }
 
-  .button--transparent {
-    font-size: 18px;
-    padding: 12px;
-    min-width: 160px;
+  .skills__title {
+    margin-bottom: 53px;
   }
 
-  .site-header__sitenav .sitenav__link {
+  .skills__grid {
+    gap: 13px;
+  }
+
+  .item__title {
+    font-size: 22px;
+  }
+
+  .item__text {
+    font-size: 14px;
+  }
+
+  .about {
+    padding-top: 53px;
+    padding-bottom: 50px;
+  }
+
+  .about__content-description-list-wrapper {
+    max-width: 540px;
+  }
+
+  .about__content {
+    margin-bottom: 9px;
+  }
+
+  .about__title {
+    margin-bottom: 13px;
+  }
+
+  .about__text {
     font-size: 16px;
+  }
+
+  .description-list {
+    margin: 0 0 -50px -80px;
+  }
+
+  .description-list__inner {
+    margin: 0 0 50px 80px;
+  }
+
+  .description-list__term {
+    font-size: 16px;
+  }
+
+  .description-list__detail {
+    font-size: 30px;
   }
 }
