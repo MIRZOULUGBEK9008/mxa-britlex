@@ -535,7 +535,7 @@ h3 {
 .pricing__item {
   margin-bottom: 80px;
   min-height: 590px;
-  width: 410px;
+  width: calc((100% - 110px) / 3);
   max-width: 100%;
 }
 
@@ -569,6 +569,7 @@ h3 {
 .badge {
   display: flex;
   align-items: center;
+  justify-content: center;
   color: #546269;
   background-color: #eeeeee;
   font-size: 18px;
@@ -819,5 +820,38 @@ h3 {
 
   .description-list__detail {
     font-size: 30px;
+  }
+
+  .pricing {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+
+  .pricing__title {
+    margin-bottom: 47px;
+  }
+
+  .pricing__item {
+    min-height: 570px;
+  }
+
+  .card__title {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+
+  .card__text {
+    font-size: 16px;
+    margin-bottom: 31px;
+  }
+
+  .badge {
+    font-size: 16px;
+    padding: 5px;
+    min-width: 205px;
+  }
+
+  .badge > b {
+    font-size: 24px;
   }
 }
