@@ -600,7 +600,7 @@ h3 {
 
 .contact__img {
   display: block;
-  width: 477px;
+  width: 37%;
   height: 429px;
   object-fit: contain;
 }
@@ -853,5 +853,39 @@ h3 {
 
   .badge > b {
     font-size: 24px;
+  }
+
+  .contact {
+    padding-top: 70px;
+    padding-bottom: 160px;
+  }
+
+  .contact__title {
+    margin-bottom: 0;
+  }
+
+  .contact__text {
+    font-size: 16px;
+    margin-bottom: 34px;
+  }
+
+  .form__input {
+    padding: 23px;
+    font-size: 14px;
+  }
+
+  .form__button {
+    padding: 21px;
+    min-width: 193px;
+    font-size: 16px;
+    margin-left: 14px;
+  }
+
+  .site-footer {
+    padding: 25px 0;
+  }
+
+  .privacy__link {
+    font-size: 16px;
   }
 }
