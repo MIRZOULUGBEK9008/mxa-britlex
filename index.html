@@ -29,7 +29,7 @@
   <header class="site-header">
     <div class="container site-header__container">
       <!-- LOGO  -->
-      <a class="logo" href="index.html">
+      <a class="logo site-header__logo" href="index.html">
         <img class="logo__img" src="img/logo.svg" alt="Britlex logo" width="106" height="54">
       </a>
 
@@ -52,16 +52,19 @@
             <a href="#" class="sitenav__link">Contacts</a>
           </li>
         </ul>
+        <a class="button button--transparent" href="#">Let’s talk</a>
       </nav>
 
       <!-- BUTTON  -->
-      <a class="button button--transparent" href="#">Let’s talk</a>
+      <button class="toggler" type="button">
+        <img class="toggler__img" src="img/navbar.svg" alt="Open navbar menu">
+      </button>
     </div>
   </header>
 
 
   <!-- MAIN-CONTENT  -->
-  <main class="main-content">
+  <main class="main-content" style="display: none;">
     <!-- HERO  -->
     <section class="hero">
       <div class="container hero__container">
@@ -239,7 +242,7 @@
   </main>
 
   <!-- FOOTER -->
-  <footer class="site-footer">
+  <footer class="site-footer" style="display: none;">
     <div class="container site-footer__container">
       <!-- LOGO  -->
       <a class="logo" href="index.html">

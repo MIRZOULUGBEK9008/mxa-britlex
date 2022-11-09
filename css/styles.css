@@ -267,7 +267,14 @@ h3 {
 .site-header__container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+}
+
+.site-header__logo {
+  margin-right: auto;
+}
+
+.site-header__sitenav {
+  display: flex;
 }
 
 .sitenav__list {
@@ -276,6 +283,7 @@ h3 {
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-right: 100px;
 }
 
 .sitenav__item:not(:last-child) {
@@ -296,6 +304,20 @@ h3 {
 
 .sitenav__link:active {
   opacity: 0.6;
+}
+
+.toggler {
+  display: none;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+
+.toggler__img {
+  display: block;
+  width: 30px;
+  height: 17px;
+  object-fit: contain;
 }
 
 
@@ -713,6 +735,10 @@ h3 {
     padding-bottom: 25px;
   }
 
+  .sitenav__list {
+    margin-right: 50px;
+  }
+
   .logo__img {
     width: 89px;
     height: 45px;
@@ -900,6 +926,22 @@ h3 {
 
 /* 800px */
 @media only screen and (max-width: 800px) {
+  .site-header__sitenav {
+    position: absolute;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .site-header__sitenav > .sitenav__list {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 0;
+  }
+
+  .toggler {
+    display: inline-flex;
+  }
+
   .hero {
     padding-bottom: 30px;
   }
@@ -1089,7 +1131,6 @@ h3 {
     width: 424px;
     height: 424px;
     order: -1;
-    /* margin-bottom: 17px; */
   }
 
   .hero__img-light {
